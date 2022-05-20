@@ -83,6 +83,22 @@ body{
     font-size: .8rem;
 }
 
+.lastbutton{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20vh;
+}
+
+.lastbutton button{
+    color: white;
+    background-color: #F2994A;
+    padding:1rem .5rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
 
 /*container right section*/
 
@@ -181,36 +197,35 @@ body{
     font-weight: 100;
 }
 
-/*last section*/
-.lastbutton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-}
 
-.lastbutton button{
-    color: white;
-    background-color: #F2994A;
-    padding:1rem .5rem;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-}
 
-@media (max-width: 768px) {
+@media (max-width: 912px) {
     .container{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
 
-    .container_right--first{
-        flex-direction: column;
+    .container_left{
+        width: 80%;
     }
-    .container_right--second{
-        flex-direction: column;
+
+    .lastbutton{
+        justify-content: center;
     }
+
+    .container_right{
+        width: 100%;
+    }
+    .container_right--first, .container_right--second{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container_right--first img, .container_right--second img{
+        width: 300px;
+        height: 300px;
+    }
+   
 
     .box{
         padding: 0;

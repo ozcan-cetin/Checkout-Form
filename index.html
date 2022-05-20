@@ -4,151 +4,154 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Checkout</title>
   </head>
   <body>
-      <div class="main">
-          <h1>Check Out</h1>
-          <div class="container">
-            <div class="container_left">
-              <div class="container_left--contact">
-                <h3>Contact information</h3>
-                <label for="Email" id="email">Email</label>
-                <div class="left_contact--email inp">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input
-                      type="email"
-                      name="email"
-                      class="email"
-                      placeholder="Enter your email..."
-                      required
-                    />
-                </div>
-                <label for="Phone" id="phone">Phone</label>
-                <div class="left_contact--phone inp">
-                    <i class="fa-solid fa-phone"></i>
-                    <input
-                      type="tel"
-                      name="phone"
-                      placeholder="Enter your phone..."
-                      required
-                    />
-                </div>
-              </div>
-      
-              <div class="container_left--shipping">
-                <h3>Shipping address</h3>
-                <label for="Full name" id="fullname">Full name</label>
-                <div class="left_shipping--fullname inp">
-                    <i class="fa-solid fa-user"></i>
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Enter your Full name..."
-                      required
-                    />
-                </div>
-                <label for="Address" id="address">Address</label>
-                <div class="left_shipping--address inp">
-                    <i class="fa-solid fa-house-chimney"></i>
-                    <input
-                      type="text"
-                      name="address"
-                      placeholder="Enter your address..."
-                    />
-                </div>
-                <label for="City" id="city">City</label>
-                <div class="left_shipping--city inp">
-                    <i class="fa-solid fa-city"></i>
-                    <input
-                      type="text"
-                      name="city"
-                      placeholder="Enter your city"
-                      required
-                    />
-                </div>
-                <div class="left_shipping--last">
-                  <div class="shipping_last--country">
-                    <label for="Country" id="country">Country</label>
-                    <div class="last_country--country inp">
-                        <i class="fa-solid fa-earth-europe"></i>
-                        <select name="country" id="country">
-                          <option value="Turkey">Turkey</option>
-                          <option value="German">German</option>
-                          <option value="England">England</option>
-                          <option value="Holland">Holland</option>
-                        </select>
-                    </div>
-                  </div>
-                  <div class="shipping_last--postcode">
-                    <label for="Post Code" id="postcode">Post Code</label>
-                    <div class="last_postcode--postcode inp">
-                        <i class="fa-solid fa-envelopes-bulk"></i>
-                        <input
-                          type="number"
-                          name="post code"
-                          placeholder="Enter your postal code..."
-                          required
-                        />
-                    </div>
-                  </div>
-                </div>
-                <div class="left_shipping--info">
-                  <input type="checkbox" name="" id="" />
-                  <label for="" id="info">See this information next time</label>
-                </div>
-              </div>
+    <div class="main">
+      <h1>Check Out</h1>
+      <div class="container">
+        <form action="#" method="post" class="container_left">
+          <div class="container_left--contact">
+            <h3>Contact information</h3>
+            <label for="Email" id="email">Email</label>
+            <div class="left_contact--email inp">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                name="email"
+                class="email"
+                placeholder="Enter your email..."
+                required
+              />
             </div>
-            <div class="container_right">
-              <div class="container_right--first">
-                <div class="right_first--img">
-                  <img src="./img/photo1.png" alt="Vintage Backbag" />
-                </div>
-                <div class="right_first--display">
-                  <p>Vintage Backbag</p>
-                  <p class="price">$54.99 <span id="vintage">$94.99</span></p>
-                  <div class="first_display--counter">
-                    <button class="left box">-</button>
-                    <label for="" id="firstcounter">1</label>
-                    <!-- <p id="firstcounter"></p> -->
-                    <button class="right box">+</button>
-                  </div>
-                </div>
-              </div>
-              <div class="container_right--second">
-                <div class="right_second--img">
-                  <img src="./img/photo2.png" alt="Vintage Backbag" />
-                </div>
-                <div class="right_second--display">
-                  <p>Vintage Backbag</p>
-                  <p class="price">$54.99 <span id="vintage">$94.99</span></p>
-                  <div class="second_display--counter">
-                    <button class="left box">-</button>
-                    <label for="" id="secondcounter">1</label>
-                    <!-- <p id="secondcounter"></p> -->
-                    <button class="right box">+</button>
-                  </div>
-                </div>
-              </div>
-              <div class="container_right--last">
-                <hr />
-                <div class="right_last--shipping">
-                  <p>Shipping</p>
-                  <p id="shipping">$19</p>
-                </div>
-                <hr />
-                <div class="right_last--total">
-                  <p>Total</p>
-                  <p id="total">$148.98</p>
-                </div>
-              </div>
+            <label for="Phone" id="phone">Phone</label>
+            <div class="left_contact--phone inp">
+              <i class="fa-solid fa-phone"></i>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Enter your phone..."
+                required
+              />
             </div>
-      </div>
+          </div>
 
-      <div class="lastbutton">
-          <button id="lastbutton">Continue</button>
+          <div class="container_left--shipping">
+            <h3>Shipping address</h3>
+            <label for="Full name" id="fullname">Full name</label>
+            <div class="left_shipping--fullname inp">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your Full name..."
+                required
+              />
+            </div>
+            <label for="Address" id="address">Address</label>
+            <div class="left_shipping--address inp">
+              <i class="fa-solid fa-house-chimney"></i>
+              <input
+                type="text"
+                name="address"
+                placeholder="Enter your address..."
+              />
+            </div>
+            <label for="City" id="city">City</label>
+            <div class="left_shipping--city inp">
+              <i class="fa-solid fa-city"></i>
+              <input
+                type="text"
+                name="city"
+                placeholder="Enter your city"
+                required
+              />
+            </div>
+            <div class="left_shipping--last">
+              <div class="shipping_last--country">
+                <label for="Country" id="country">Country</label>
+                <div class="last_country--country inp">
+                  <i class="fa-solid fa-earth-europe"></i>
+                  <select name="country" id="country">
+                    <option value="Turkey">Turkey</option>
+                    <option value="German">German</option>
+                    <option value="England">England</option>
+                    <option value="Holland">Holland</option>
+                  </select>
+                </div>
+              </div>
+              <div class="shipping_last--postcode">
+                <label for="Post Code" id="postcode">Post Code</label>
+                <div class="last_postcode--postcode inp">
+                  <i class="fa-solid fa-envelopes-bulk"></i>
+                  <input
+                    type="number"
+                    name="post code"
+                    placeholder="Enter your postal code..."
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="left_shipping--info">
+              <input type="checkbox" name="" id="" />
+              <label for="" id="info">See this information next time</label>
+            </div>
+          </div>
+          <div class="lastbutton">
+            <button type="submit" id="lastbutton">Continue</button>
+          </div>
+        </form>
+
+        <div class="container_right">
+          <div class="container_right--first">
+            <div class="right_first--img">
+              <img src="./img/photo1.png" alt="Vintage Backbag" />
+            </div>
+            <div class="right_first--display">
+              <p>Vintage Backbag</p>
+              <p class="price">$54.99 <span id="vintage">$94.99</span></p>
+              <div class="first_display--counter">
+                <button class="left box">-</button>
+                <label for="" id="firstcounter">1</label>
+                <!-- <p id="firstcounter"></p> -->
+                <button class="right box">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="container_right--second">
+            <div class="right_second--img">
+              <img src="./img/photo2.png" alt="Vintage Backbag" />
+            </div>
+            <div class="right_second--display">
+              <p>Vintage Backbag</p>
+              <p class="price">$74.99 <span id="vintage">$124.99</span></p>
+              <div class="second_display--counter">
+                <button class="left box">-</button>
+                <label for="" id="secondcounter">1</label>
+                <!-- <p id="secondcounter"></p> -->
+                <button class="right box">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="container_right--last">
+            <hr />
+            <div class="right_last--shipping">
+              <p>Shipping</p>
+              <p id="shipping">$19</p>
+            </div>
+            <hr />
+            <div class="right_last--total">
+              <p>Total</p>
+              <p id="total">$148.98</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
