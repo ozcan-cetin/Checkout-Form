@@ -8,6 +8,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color: black;
+    font-size: 1rem;
     }
 
 .main h1{
@@ -210,6 +211,11 @@ body{
         width: 80%;
     }
 
+    .last_country--country{
+        justify-content: space-between;
+        width: 30%;
+    }
+
     .lastbutton{
         justify-content: center;
     }
@@ -218,26 +224,32 @@ body{
         width: 100%;
     }
     .container_right--first, .container_right--second{
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        /* justify-content: space-around; */
+        align-items: flex-start;
+        font-size: 1rem;
     }
     .container_right--first img, .container_right--second img{
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
    
-
-    .box{
-        padding: 0;
+    .right_first--display, .right_second--display{
+        justify-content: space-between;
     }
-
-    .first_display--counter{
+    .first_display--counter, .second_display--counter{
         margin-top:1rem ;
         width: fit-content;
+        padding: .5rem .5rem;
+        font-size: 1rem;
     }
-    .second_display--counter{
-        margin-top:1rem ;
+    
+    .box{
+        font-size: 1rem;
+        padding: .5rem .5rem;
     }
+    
+  
 
     .inp{
         display: flex;
@@ -245,6 +257,7 @@ body{
 
     .right_last--shipping, .right_last--total{
         gap: 1rem;
+        font-size: 1rem;
     }
 
     .left_shipping--last{
