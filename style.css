@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    }
+
+.main h1{
+       text-align: center;
+       margin-top: 1rem;
+    }
+.container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+/*container left section*/
+
+.container_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 40%;
+}
+
+.container_left--contact{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.container_left--shipping{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.left_shipping--last{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.shipping_last--country{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.shipping_last--postcode{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.container_left input, select{
+    border:none;
+    font-size: .9rem;
+    outline: none;
+}
+
+.inp{
+    border: 1px solid lightgray;
+    padding: .5rem;
+    border-radius: 5px;
+}
+.inp i{
+    opacity: .5;
+}
+
+#email, #phone, #fullname, #address, #city, #country, #postcode, #info{
+    font-size: .8rem;
+}
+
+
+/*container right section*/
+
+.container_right{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 35%;
+    height: 60%;
+    gap: 1rem;
+    background-color: #EEEEEE;
+    border: 1.5rem solid #EEEEEE;
+    border-radius: 10px;
+    padding-right: 2rem;
+   }
+
+.container_right--first{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.right_first--img img{
+    width: 100px;
+    border-radius: 10px;
+}
+.right_first--display{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: .3rem;
+}
+
+.first_display--counter{
+    margin-top: 2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: .2rem;
+    width:fit-content;
+}
+
+.box{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0 .4rem;
+    margin: 0 .5rem;
+    background-color:#E0E0E0 ;
+    border: none;
+    cursor: pointer;
+}
+.container_right--second{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.right_second--img img{
+    width: 100px;
+    border-radius: 10px;
+}
+.right_second--display{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.second_display--counter{
+    margin-top: 2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: .2rem;
+    width: fit-content;
+}
+
+.container_right--last{
+    margin-top: 2rem;
+}
+
+.right_last--shipping{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+.right_last--total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    color: #F2994A;
+    font-weight: 600;
+}
+
+.price span{
+    color: black;
+    text-decoration: line-through;
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+/*last section*/
+.lastbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.lastbutton button{
+    color: white;
+    background-color: #F2994A;
+    padding:1rem .5rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_right--first{
+        flex-direction: column;
+    }
+    .container_right--second{
+        flex-direction: column;
+    }
+
+    .box{
+        padding: 0;
+    }
+
+    .first_display--counter{
+        margin-top:1rem ;
+        width: fit-content;
+    }
+    .second_display--counter{
+        margin-top:1rem ;
+    }
+
+    .inp{
+        display: flex;
+    }
+
+    .right_last--shipping, .right_last--total{
+        gap: 1rem;
+    }
+
+    .left_shipping--last{
+        flex-direction: column;
+    }
+}
