@@ -113,7 +113,6 @@ body{
     background-color: #EEEEEE;
     border: 1.5rem solid #EEEEEE;
     border-radius: 10px;
-    padding-right: 2rem;
    }
 
 .container_right--first{
@@ -200,7 +199,7 @@ body{
 
 
 
-@media (max-width: 912px) {
+@media (max-width: 768px) {
     .container{
         flex-direction: column-reverse;
         justify-content: center;
@@ -213,7 +212,7 @@ body{
 
     .last_country--country{
         justify-content: space-between;
-        width: 30%;
+        width: 40%;
     }
 
     .lastbutton{
@@ -230,8 +229,8 @@ body{
         font-size: 1rem;
     }
     .container_right--first img, .container_right--second img{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
    
     .right_first--display, .right_second--display{
@@ -262,5 +261,61 @@ body{
 
     .left_shipping--last{
         flex-direction: column;
+    }
+}
+
+@media (max-width:320px) {
+    .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_left{
+        width: 80%;
+    }
+
+    .last_country--country{
+        justify-content: space-between;
+        width: 40%;
+    }
+
+    .lastbutton{
+        justify-content: center;
+    }
+
+    .container_right{
+        width: 100%;
+    }
+    .container_right--first, .container_right--second{
+        flex-direction: row;
+        /* justify-content: space-around; */
+        align-items: flex-start;
+        font-size: 1rem;
+    }
+    .container_right--first img, .container_right--second img{
+        width: 130px;
+        height: 130px;
+    }
+}
+@media (max-width:280px) {
+    .container_right--first img, .container_right--second img{
+        width: 112px;
+        height: 112px;
+    }
+    .right_first--display, .right_second--display{
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .first_display--counter, .second_display--counter{
+        margin-top:0rem ;
+        width: fit-content;
+        padding: .5rem .5rem;
+        font-size: .7rem;
+    }
+    
+    .box{
+        font-size: .7rem;
+        padding: .5rem .5rem;
     }
 }
