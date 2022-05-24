@@ -1,6 +1,6 @@
 [Click here](https://ozcan-cetin.github.io/Checkout-Form/)
 
-**With this project I;**
+# With this project I;
 * improved my knowledge of Flexbox,
 * tried to use media queries efficiently,
 * positioned some elments using CSS Position property,
