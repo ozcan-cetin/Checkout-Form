@@ -192,18 +192,19 @@ body{
     justify-content: space-between;
 }
 
-.price{
-    color: #F2994A;
-    font-weight: 600;
-}
 
-.price span{
+.price {
     color: black;
-    text-decoration: line-through;
     font-size: .8rem;
     font-weight: 100;
 }
 
+.price span{
+    font-size: 1rem;
+    color: #F2994A;
+    font-weight: 600;
+    padding-right: .2rem;
+}
 
 
 @media (max-width: 768px) {
