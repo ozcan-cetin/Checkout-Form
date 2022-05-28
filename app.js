@@ -1,5 +1,11 @@
+//! I set variables to determine the amount of product.
+
 const minus = document.querySelectorAll(".left")
 const plus = document.querySelectorAll(".right")
+
+//! I determined the amount of product using a function.
+
+// INCREASE QUANTITY
 
 plus.forEach((item)=>{
     console.log(item);
@@ -10,6 +16,8 @@ function add(item){
     let amount = this.previousElementSibling
     amount.innerHTML = Number(amount.innerHTML) + 1
   }
+
+  // REDUCE THE QUANTITY
 
 minus.forEach((item)=>{
     console.log(item);

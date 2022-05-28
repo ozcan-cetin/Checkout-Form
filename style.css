@@ -132,11 +132,18 @@ body{
 }
 
 .first_display--counter{
-    margin-top: 2rem;
+    margin-top: .5rem;
     border: 1px solid gray;
     border-radius: 5px;
     padding: .2rem;
     width:fit-content;
+}
+.remove{
+    width: 6rem;
+    padding: .3rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
 }
 
 .box{
@@ -164,7 +171,7 @@ body{
 }
 
 .second_display--counter{
-    margin-top: 2rem;
+    margin-top: .5rem;
     border: 1px solid gray;
     border-radius: 5px;
     padding: .2rem;
