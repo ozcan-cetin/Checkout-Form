@@ -3,23 +3,24 @@
 const minus = document.querySelectorAll(".left")
 const plus = document.querySelectorAll(".right")
 
-//! ***********************
+//! I set variable to determine the quantity of total price.
 
 const total = document.getElementById("total")
-console.log(total.innerHTML);
+// console.log(total.innerHTML);
+
+//! I set variable to adjust removing process.
+const remove = document.querySelectorAll(".remove")
+// console.log(remove);
 
 
-//? I determined the amount of product using a function.
+//? I determined the amount of product and quantity of product using a function.
 
-// INCREASE QUANTITY
+// INCREASE QUANTITY AND TOTAL PRICE
 
 plus.forEach((item)=>{
     // console.log(item);
     item.addEventListener("click", add)
     
-// SET PRICE   
-    
-    // item.addEventListener("click", priceup)
 })
 
 function add(item){
@@ -29,17 +30,13 @@ function add(item){
     total.innerHTML ="$" + (parseFloat(total.innerHTML.slice(1))+ parseFloat(this.parentElement.previousElementSibling.firstElementChild.innerHTML.slice(1))).toFixed(2)
   }
 
-console.log(plus[0].parentElement.previousElementSibling.firstElementChild.innerHTML.slice(1));
 
-  // REDUCE THE QUANTITY
+  // REDUCE THE QUANTITY AND TOTAL PRICE
 
 minus.forEach((item)=>{
     // console.log(item);
     item.addEventListener("click", substract)
 
-    // SET PRICE 
-
-    // item.addEventListener("click", pricedown)
 })
 
 function substract(item){
@@ -53,6 +50,16 @@ function substract(item){
 }
   }
 
+//* REMOVE *************
+remove.forEach((item)=>{
+    item.addEventListener("click", delet)
+})
+
+function delet(item){
+    this.parentElement.parentElement.style.display = "none";
+
+    total.innerHTML ="$" + (parseFloat(total.innerHTML.slice(1)) - (Number(this.previousElementSibling.firstElementChild.nextElementSibling.innerHTML) * parseFloat(this.previousElementSibling.previousElementSibling.firstElementChild.innerHTML.slice(1)))).toFixed(2)
+}
 
 
 
